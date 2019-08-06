@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cabin&display=swap");
+.headline-bg {
+  background-color: #490D40;
+  background: url(assets/img/main.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  margin-top: -60px;
+}
+.headline-text {
+  position: absolute;
+  max-width: 550px;
+  top: 30%;
+}
+@media (min-width: 700px) {
+  .headline-text {
+    left: 15%;
+  }
+}
+@media (min-width: 850px) {
+  .headline-text {
+    left: 5%;
+  }
+}
+.headline h1 {
+  color: white;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-family: "Lato", arial, sans-serif;
+  letter-spacing: 1px;
+  font-size: 2em;
+  font-weight: 500;
+}
+.headline-sub {
+  color: white;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-family: "Lato", arial, sans-serif;
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  font-size: 16px;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #28A745;
+}
+
+#about p {
+  color: #5e5e5e;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+#staff p {
+  color: #5e5e5e;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5;
+  font-weight: 300;
+}
+#staff h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.contact-head {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.tel a {
+  color: #28A745;
+}
+.tel a:hover {
+  color: #28A745;
+}
+
+.info {
+  color: #5e5e5e;
+  font-family: "Lato", arial, sans-serif;
+  font-weight: 300;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: "Cabin", sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+h3, h4 {
+  text-align: center;
+  font-family: "Lato", arial, sans-serif;
+  font-weight: 400;
+}
+
+#more, #more2, #more3 {
+  display: none;
+}
+
+.img-bubble {
+  margin: 25px auto;
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  background-color: #DB461B;
+}
+
+.btn a {
+  text-decoration: none;
+  color: inherit;
+}
+.btn a:hover {
+  text-decoration: none;
+}
+
+.read-more {
+  text-align: center;
+}
+
+@media (min-width: 500px) {
+  .navbar {
+    position: absolute;
+    top: 10px;
+  }
+}
+@media (min-width: 550px) {
+  .navbar {
+    position: static;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

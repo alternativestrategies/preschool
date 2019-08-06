@@ -1,0 +1,155 @@
+//imports and variables
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+$lato: 'Lato', arial, sans-serif;
+$cabin: 'Cabin', sans-serif;
+$primary-p-color: rgb(94, 94, 94);
+$accent-color: #28A745;
+
+//mixins
+@mixin head-text {
+  color: white;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-family: $lato;
+  letter-spacing: 1px;
+}
+
+@mixin body-text {
+  color: $primary-p-color;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+
+
+//base styles
+.headline{
+  &-bg {
+   background-color: #490D40;
+   background: url(assets/img/main.jpg) no-repeat center center;
+   background-size: cover;
+   height: 100vh;
+   margin-top: -60px;
+  }
+  &-text{
+    position: absolute;
+    max-width: 550px;
+    top: 30%;
+    @media (min-width: 700px){
+      left: 15%;
+    }
+    @media (min-width: 850px){
+      left: 5%;
+    }
+  }
+  h1{
+    @include head-text;
+    font-size: 2em;
+    font-weight: 500;
+  }
+  &-sub {
+    @include head-text;
+    font-size: 1em;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-size: 16px;
+    &:hover {
+      color: $accent-color;
+    }
+}
+
+
+#about {
+  p {
+    @include body-text;
+  }
+}
+
+#staff {
+  p {
+    @include body-text;
+  }
+  h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}
+
+.contact{
+  &-head {
+    font-size: 25px;
+    font-weight: 300;
+  }
+}
+
+.tel a {
+  color: $accent-color;
+  &:hover {
+    color: $accent-color;
+
+  }
+}
+
+.info{
+  color: $primary-p-color;
+  font-family: $lato;
+  font-weight: 300;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: $cabin;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+h3, h4 {
+  text-align: center;
+  font-family: $lato;
+  font-weight: 400;
+}
+
+#more, #more2, #more3 {
+  display: none;
+}
+
+//components
+.img-bubble {
+  margin: 25px auto;
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  background-color: #DB461B;
+}
+.btn a {
+  text-decoration: none;
+  color: inherit;
+  &:hover{
+    text-decoration: none;
+  }
+}
+.read-more {
+  text-align: center;
+}
+
+//media queries
+@media (min-width:500px) {
+  .navbar {
+    position: absolute;
+    top: 10px;
+  }
+}
+@media (min-width: 550px) {
+  .navbar {
+    position: static;
+
+  }
+}

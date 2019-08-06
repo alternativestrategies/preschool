@@ -1,0 +1,4 @@
+# ignores DS_Stores, hopefully
+
+.DS_Store/
+**/DS_Store
